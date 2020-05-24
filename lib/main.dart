@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:list_animate/src/flare_page.dart';
 import 'package:list_animate/src/home_page.dart';
 import 'package:list_animate/src/wheels_page.dart';
 
@@ -48,7 +49,8 @@ class BodyApp extends StatefulWidget {
 class _BodyAppState extends State<BodyApp> {
   final opciones = <Widget> [
     HomePage(),
-    WhelsPage()
+    WhelsPage(),
+    FlarePage()
   ];
 
   int _indexTab = 0;
@@ -82,6 +84,10 @@ class _BodyAppState extends State<BodyApp> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.rounded_corner),
+            title: Text('Circular')
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.satellite),
             title: Text('Circular')
           )
         ],
